@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--lien des feuilles de style-->
+    <link rel="stylesheet" href="assets/css/styleacceuil.css">
+    <link rel="stylesheet" href="assets/css/layoutacceuil.css">
+    <!--Lien de la galerie d'icones de google fonts.-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>CV numérique Candice Leroy</title>
+</head>
+
+<body>
+    <header>
+        <!--Barre de navigation-->
+        <!--Barre de navigation mobile (menu hamburger)-->
+        <!--Ajout de l'icone menu-->
+        <div class="mobile-menu">
+            <span class="material-symbols-outlined" onclick="toggler()" id="toggler">
+                menu</span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="Acceuil.html">Accueil</a><img src="assets/img/acceuil icone.png" alt="Acceuil icone">
+                </li>
+                <li><a href="compétences.html">Mes compétences</a><img src="assets/img/mes compétences icone.png"
+                        alt="compétences icone"></li>
+                <li><a href="diplômes.html">Mes diplômes</a><img src="assets/img/Mes diplomes icone.png"
+                        alt="diplôme icone"></li>
+                <li><a href="expériences.html">Mes expériences</a><img src="assets/img/Mes expériences icone.png"
+                        alt="expériences icone"></li>
+                <li><a href="centresd'intêret.html">Mes centres d'intêret</a><img
+                        src="assets/img/mes centres d'intêret icone.png" alt="coeur"></li>
+                <li><a href="#">Portfolio</a><img src="assets/img/portfolio icone.png" alt="portfolio icone"></li>
+            </ul>
+        </nav>
+        <!--Ajout du script Javascript qui nous permet de rendre le menu cliquable.-->
+        <script>
+            function toggler() {
+                const icon = document.querySelector('#toggler')
+                const menu = document.querySelector('.menu')
+                //Quand le menu est ouvert, on affiche l'icone close pour pouvoir le refermer puis on affiche le contenu du menu, et on cache les éléments de la page.//
+                if (icon.innerHTML == "menu") {
+                    icon.innerHTML = "close";
+                    menu.style.display = "block";
+                    presentation.style.display = "none";
+                    informations.style.display = "none";
+                }
+                //Quand le menu est fermé, on affiche l'icone menu pour pouvoir afficher le menu puis on cache les éléments du menu, et on affiche les éléments de la page.//
+                else {
+                    icon.innerHTML = "menu";
+                    menu.style.display = "none";
+                    presentation.style.display = "block";
+                    informations.style.display = "block";
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <!--Présentation-->
+        <section id="presentation">
+            <p>Je m’appelle Candice j’ai 18 ans et je suis actuellement en études supérieures, en première année de
+                Bachelor à la Manu, l’école des métiers du numérique, à la Croix-Saint-Ouen.
+                <br>
+                <br>
+                Étant passionnée par le design et le marketing, je m’efforce d’approfondir mes capacités dans ces
+                domaines.
+                Curieuse
+                et motivée je cherche à développer plus profondément mes compétences pour exceller dans le domaine de la
+                technologie. Ma créativité, mon sérieux et mon engagement sont des atouts pour contribuer à des projets
+                novateurs et apporter des solutions uniques.Je suis prête à m’engager pleinement dans des projets
+                créatifs et à apporter ma contribution afin de concrétiser des
+                idées révolutionnaires et porteuses d’avenir.
+            </p>
+            <!--Photo de profil-->
+            <div id="profil">
+                <img src="assets/img/profil.png" alt="photo de profil Candice">
+                <p>Candice Leroy</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="informations">
+        <!--Informations de contacts-->
+        <div>
+            <!--Mon adresse postal-->
+            <img src="assets/img/adresse icone.png" alt="adresse icone">
+            <p>35 allée chantoiseau,<br>60157 Elincourt sainte Marguerite</p>
+        </div>
+        <div>
+            <ul>
+                <!--Mon adresse mail-->
+                <li id="email"><a href="mailto:leroycandice504@gmail.com">leroycandice504@gmail.com</a><img
+                        src="assets/img/mail icone.png" alt="mail icone">
+                </li>
+                <!--Mon numéro de téléphone-->
+                <li id="phone"><a href="tel:+33767652116">07.67.65.21.16</a><img src="assets/img/telephone icone.png  "
+                        alt="téléphone icone">
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
