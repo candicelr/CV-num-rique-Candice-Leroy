@@ -1,4 +1,4 @@
-/*Ajout de la police inter avec google font.*/
+/*Ajout de la police inter avec google font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*Ajout du media queries pour l'adaptation sur mobile.*/
@@ -22,8 +22,8 @@
         background-color: #f3cdcd;
     }
 
-    /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
-    .menu>ul>li:nth-child(1) a {
+    /*Mise en couleur du titre compétences de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>ul>li:nth-child(2) a {
         color: black;
         font-weight: bolder;
 
@@ -88,38 +88,30 @@
         margin-bottom: 30px;
     }
 
-    
     /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>li:nth-child(1) a {
         color: black;
         font-weight: bolder;
     }
+
     /*Ajout de la décoration de fond.*/
     body {
-        background-image:url("../img/fond décoration accueil mobile.png");
-        background-size: 102%;
+        background-image: url("../img/fond décoration compétences mobile.png");
+        background-size: 100%;
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-    /*Ajout d'une marge interne sur la paragraphe de présentation et de la police Inter.*/
-    #presentation>p{
-        padding:10%;
-        font-family: "Inter", sans-serif;  
+
+    /*Ajout d'une marge externe en haut, en bas et à gauche de la section compétences.*/
+    #skills {
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
-    /*Définition de la taille de la photo de profil et définition de sa marge externe à gauche.*/
-    #profil>img{
-        height: 70%;
-        width: 70%;
-        margin-left:40px;
-    }
-    /*Définition de la marge externe du Nom et prénom en dessous de la photo de profil et ajout de la police Inter.*/
-    #profil>p{
-        margin-left: 90px;
-        font-family: "Inter", sans-serif;
-    }
+
     /* Définition de la couleur de fond et de la marge interne du footer.*/
     footer {
         background-color: #f3cdcd;
@@ -141,17 +133,19 @@
     footer #phone a {
         color: black;
     }
+
     /*Ajout de marge externe sur les éléments email et phone.*/
-    footer>div:last-child>ul>#email{
+    footer>div:last-child>ul>#email {
         margin-left: -35px;
     }
-    footer>div:last-child>ul>#phone{
+
+    footer>div:last-child>ul>#phone {
         margin-left: -35px;
     }
 
 }
 
-/*Ajout du media queries pour l'adaptation sur ordinateur.*/
+/*Ajout du media queries pour l'adaptation sur ordinateur*/
 @media screen and (min-width:1024px) {
     * {
         margin: 0;
@@ -159,64 +153,63 @@
         font-family: "Inter", sans-serif;
     }
 
-    /*Définition de la largeur de la barre de navigation.*/
-    .menu {
+    /*Définition de la taille et de la couleur de la barre de navigation.*/
+    header>nav {
         width: 100%;
     }
 
-    /*Définition de la taille et de la couleur de la barre de navigation.*/
-    .menu>ul {
+    header>nav>ul {
         background-color: #f3cdcd;
         height: 80px;
     }
 
-    /*Je cache l'icone menu sur la version ordinateur.*/
+    /*On cache l'icone menu sur la version ordinateur.*/
     .mobile-menu {
         display: none;
     }
 
-    /*Mise en couleur du titre acceuil, de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
-    .menu>ul>li:nth-child(1) a {
+    /*Mise en couleur du titre compétences de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    header>nav>ul>li:nth-child(2) a {
         color: black;
         font-weight: bolder;
     }
 
-    /*Modification de l'état et de la couleur des titres des éléments de la barre de navigation au survol.*/
-    .menu>ul>li>a:hover {
+    /*Modification de la couleur des titres des éléments de la barre de navigation au survol*/
+    header>nav>ul>li>a:hover {
         color: black;
         font-weight: bolder;
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    .menu>ul>li:nth-child(1) a {
+    header>nav>ul>li:nth-child(1) a {
         margin: 10px;
     }
 
-    .menu>ul>li:nth-child(2) a {
+    header>nav>ul>li:nth-child(2) a {
         margin: 10PX;
     }
 
-    .menu>ul>li:nth-child(3) a {
+    header>nav>ul>li:nth-child(3) a {
         margin: 10px;
     }
 
-    .menu>ul>li:nth-child(4) a {
+    header>nav>ul>li:nth-child(4) a {
         margin: 10px;
     }
 
-    .menu>ul>li:nth-child(6) a {
+    header>nav>ul>li:nth-child(6) a {
         margin: 10px;
     }
 
-    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
-    .menu>ul>li a {
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    header>nav>ul>li a {
         text-decoration: none;
         color: black;
     }
 
-    /*Ajout de la décoration de fond.*/
+    /*Ajout de la décoration de fond*/
     main {
-        background-image: url("../img/fond décoration.png");
+        background-image: url("../img/fond décoration compétences.png");
         background-size: 102%;
         height: 100%;
         width: 100%;
@@ -225,29 +218,38 @@
         background-position: center;
     }
 
-    /* Définition de la hauteur de la section présentation.*/
-    main>#presentation {
+    /* Définition de la hauteur de la section compétences.*/
+    main>#skills {
         height: 560px;
     }
 
-    /*Défintion de la hauteur,de la largeur et de la taille de la police du texte de la section présentation.*/
-    #presentation>p {
-        width: 574px;
-        height: 360px;
-        font-size: 20px;
+    /*Définition de la taille de la liste des compétences.*/
+    main>#skills ul {
+        font-size: 24px;
     }
 
-    /*Définition de la taille de la photo de profil.*/
-    #profil>img {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-
-    /*Définition de la taille de la police du paragraphe (Prénom Nom).*/
-    #profil>p {
+    /*Définition de la taille du Titre principal.*/
+    main>#skills h1 {
         font-size: 25px;
+        margin-top: 30px;
+    }
+
+    /*Ajout d'une marge externe en haut et en bas du titre secondaire.*/
+    main>#skills h2 {
+        margin-top: 40px;
         margin-bottom: 30px;
+    }
+
+    /*Ajout d'une marge externe en haut et à gauche du premier bloc de la section en cours d'apprentissage(développement).*/
+    main>#skills>section:last-child>div:first-child {
+        margin-top: 30px;
+        margin-left: 200px;
+    }
+
+    /*Ajout d'une marge externe en haut et à droite du deuxième bloc de la section en cours d'apprentissage(design).*/
+    main>#skills>section:last-child>div:last-child {
+        margin-top: 60px;
+        margin-right: 200px;
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
@@ -271,5 +273,4 @@
     footer #phone a {
         color: black;
     }
-
 }

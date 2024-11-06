@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/layoutacceuil.css">
     <!--Lien de la galerie d'icones de google fonts.-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Ajout du lien de la page javascript.-->
+    <script src="assets/javascript/script.js"></script>
     <title>CV numérique Candice Leroy</title>
 </head>
 
@@ -23,7 +25,7 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="Acceuil.html">Accueil</a><img src="assets/img/acceuil icone.png" alt="Acceuil icone">
+                <li><a href="Accueil.html">Accueil</a><img src="assets/img/acceuil icone.png" alt="Acceuil icone">
                 </li>
                 <li><a href="compétences.html">Mes compétences</a><img src="assets/img/mes compétences icone.png"
                         alt="compétences icone"></li>
@@ -36,27 +38,6 @@
                 <li><a href="#">Portfolio</a><img src="assets/img/portfolio icone.png" alt="portfolio icone"></li>
             </ul>
         </nav>
-        <!--Ajout du script Javascript qui nous permet de rendre le menu cliquable.-->
-        <script>
-            function toggler() {
-                const icon = document.querySelector('#toggler')
-                const menu = document.querySelector('.menu')
-                //Quand le menu est ouvert, on affiche l'icone close pour pouvoir le refermer puis on affiche le contenu du menu, et on cache les éléments de la page.//
-                if (icon.innerHTML == "menu") {
-                    icon.innerHTML = "close";
-                    menu.style.display = "block";
-                    presentation.style.display = "none";
-                    informations.style.display = "none";
-                }
-                //Quand le menu est fermé, on affiche l'icone menu pour pouvoir afficher le menu puis on cache les éléments du menu, et on affiche les éléments de la page.//
-                else {
-                    icon.innerHTML = "menu";
-                    menu.style.display = "none";
-                    presentation.style.display = "block";
-                    informations.style.display = "block";
-                }
-            }
-        </script>
     </header>
     <main>
         <!--Présentation-->
