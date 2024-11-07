@@ -1,0 +1,382 @@
+/*Ajout de la police inter avec google font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Ajout du media queries pour l'adaptation sur ordinateur*/
+@media screen and (min-width:1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Définition de la taille et de la couleur de la barre de navigation.*/
+    header>nav {
+        width: 100%;
+    }
+
+    header>nav>ul {
+        background-color: #f3cdcd;
+        height: 80px;
+    }
+
+    /*On cache l'icone menu sur la version ordinateur.*/
+    .mobile-menu {
+        display: none;
+    }
+
+    /*Mise en couleur du titre mes diplômes de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    header>nav>ul>li:nth-child(3) a {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Modification de la couleur des titres des éléments de la barre de navigation au survol*/
+    header>nav>ul>li>a:hover {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
+    header>nav>ul>li:nth-child(1) a {
+        margin: 10px;
+    }
+
+    header>nav>ul>li:nth-child(2) a {
+        margin: 10pX;
+    }
+
+    header>nav>ul>li:nth-child(3) a {
+        margin: 10px;
+    }
+
+    header>nav>ul>li:nth-child(4) a {
+        margin: 10px;
+    }
+
+    header>nav>ul>li:nth-child(6) a {
+        margin: 10px;
+    }
+
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    header>nav>ul>li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Ajout de la décoration de fond*/
+    main {
+        background-image: url("../img/fond décoration diplômes.png");
+        background-size: 102%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*Définition de la taille de la section mes diplômes et ajout d'une marge externe en bas.*/
+    main>#diplomas {
+        height: 550px;
+        margin-bottom: 2%;
+    }
+
+    /*Définition de la taille de la police et définition de la marge externe du titre principal.*/
+    main>#diplomas h1 {
+        font-size: 28px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        margin-right: 100px;
+    }
+
+    /* Définition de la taille de la police de la section diplômes.*/
+    main>#diplomas>div {
+        font-size: 24px;
+    }
+
+    /*Définition des marges externes du bloc diplômes lycée.*/
+    main>#diplomas>#highSchool {
+        margin-top: 70px;
+        margin-bottom: 140px;
+        margin-right: 50px;
+
+    }
+
+    /*Mise en gras du premier paragraphe du bloc collège et ajout de la police Inter.*/
+    main>#diplomas>#college>p:nth-child(1) {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Deuxième paragraphe du bloc collège en gris avec une taille de 20px.*/
+    main>#diplomas>#college>p:nth-child(2) {
+        color: gray;
+        font-size: 20px;
+    }
+
+    /*Troisième paragraphe du bloc collège avec une graisse de 500 ,une taille de 20px et la police Inter.*/
+    main>#diplomas>#college>p:nth-child(3) {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Premier paragraphe du bloc lycée en gras et ajout de la police Inter.*/
+    main>#diplomas>#highSchool>p:nth-child(1) {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Deuxième paragraphe du bloc lycée en gris et une taille de 20x.*/
+    main>#diplomas>#highSchool>p:nth-child(2) {
+        color: gray;
+        font-size: 20px;
+    }
+
+    /*Du troisième paragraphe au cinquième paragraphe du bloc lycée: graisse du texte à 500,taille de 20px et police Inter sans sérif.*/
+    main>#diplomas>#highSchool>p:nth-child(3) {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(4) {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(5) {
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    /* Définition de la couleur de fond et de la marge interne du footer.*/
+    footer {
+        background-color: #f3cdcd;
+        padding: 20px;
+    }
+
+    /*Définition de la taille des icones des élements du footer.*/
+    footer img {
+        width: 31px;
+        height: 31px;
+    }
+
+    /*Modification de la couleur du lien de l'adresse mail.*/
+    footer #email a {
+        color: black;
+    }
+
+    /*Modification de la couleur du lien du numéro de téléphone.*/
+    footer #phone a {
+        color: black;
+    }
+}
+
+/*Ajout du media queries pour l'adaptation sur mobile.*/
+@media screen and (max-width:375px) {
+
+    /*Ajout d'un fond transparent sur l'icone du menu.*/
+    .mobile-menu {
+        background-color: transparent;
+    }
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
+        width: 100%;
+        height: 600px;
+        padding-top: 100px;
+
+    }
+
+    /*Définition de la couleur de la barre de navigation.*/
+    .menu {
+        background-color: #f3cdcd;
+    }
+
+    /*Mise en couleur du titre diplômes de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>ul>li:nth-child(3) a {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    .menu>ul>li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
+    .menu>ul>li {
+        margin-top: 40px;
+    }
+
+    /*Ajout de marges externes sur les liens et les images des éléments de la barre de navigation, afin qu'ils soient correctement positionner les uns par rapport aux autres.*/
+    .menu>ul>li:nth-child(1) a {
+        margin-left: 20px;
+    }
+
+    .menu>ul>li:nth-child(2) a {
+        margin-left: 15px;
+    }
+
+    .menu>ul>li:nth-child(2) img {
+        margin-left: -3px;
+        margin-top: 5px;
+    }
+
+    .menu>ul>li:nth-child(3) img {
+        margin-left: -5px;
+    }
+
+    .menu>ul>li:nth-child(3) a {
+        margin-left: 10px;
+    }
+
+    .menu>ul>li:nth-child(4) a {
+        margin-left: 13px;
+    }
+
+    .menu>ul>li:nth-child(4) img {
+        margin-left: -3px;
+        margin-bottom: 5px;
+    }
+
+    .menu>ul>li:nth-child(5) a {
+        margin-left: 5px;
+    }
+
+    .menu>ul>li:nth-child(5) img {
+        margin-left: -5px;
+    }
+
+    .menu>ul>li:nth-child(6) a {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu>ul>li:nth-child(6) img {
+        margin-bottom: 30px;
+    }
+
+    /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>li:nth-child(1) a {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Ajout de la décoration de fond.*/
+    body {
+        background-image: url("../img/fond décoration diplômes mobile.png");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*Ajout d'une marge externe en bas sur la section diplômes.*/
+    #diplomas {
+        margin-bottom: 10%;
+    }
+
+    /*Définition de la taille, de la graisse et du type de la police et définition de la marge externe du titre principal.*/
+    #diplomas>h1 {
+        margin-top: 20%;
+        margin-right: 30%;
+        font-weight: bolder;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Ajout d'une marge externe à gauche et en bas du bloc collège.*/
+    #diplomas>#college {
+        margin-left: 10%;
+        margin-bottom: 8%;
+    }
+
+    /*Ajout d'une marge externe à droite et en bas du bloc lycée.*/
+    main>#diplomas>#highSchool {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /*Ajout de la police Inter, et mise en gras du premier paragraphe du bloc collège.*/
+    #diplomas>#college>p:nth-child(1) {
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+    }
+
+    /*Mise en gris du deuxième paragraphe du bloc collège.*/
+    main>#diplomas>#college>p:nth-child(2) {
+        color: gray;
+    }
+
+    /*Ajout de la police Inter, et mise en gras du troisième paragraphe du bloc collège.*/
+    main>#diplomas>#college>p:nth-child(3) {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+    }
+
+    /*Premier paragraphe du bloc lycée en gras.*/
+    main>#diplomas>#highSchool>p:nth-child(1) {
+        font-weight: bold;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Deuxième paragraphe du bloc lycée en gris et une taille de 20x.*/
+    main>#diplomas>#highSchool>p:nth-child(2) {
+        color: gray;
+    }
+
+    /*Du troisième paragraphe au cinquième paragraphe du bloc lycée: graisse du texte à 500,taille de 20px et police Inter.*/
+    main>#diplomas>#highSchool>p:nth-child(3) {
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(4) {
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(5) {
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+    }
+
+    /* Définition de la couleur de fond et de la marge interne du footer.*/
+    footer {
+        background-color: #f3cdcd;
+        height: 150px;
+    }
+
+    /*Définition de la taille des icones des élements du footer.*/
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /*Modification de la couleur du lien de l'adresse mail.*/
+    footer #email a {
+        color: black;
+    }
+
+    /*Modification de la couleur du lien du numéro de téléphone.*/
+    footer #phone a {
+        color: black;
+    }
+
+    /*Ajout de marge externe sur les éléments email et phone.*/
+    footer>div:last-child>ul>#email {
+        margin-left: -35px;
+    }
+
+    footer>div:last-child>ul>#phone {
+        margin-left: -35px;
+    }
+
+}
