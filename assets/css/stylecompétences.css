@@ -29,7 +29,7 @@
 
     }
 
-    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     .menu>ul>li a {
         text-decoration: none;
         color: black;
@@ -88,12 +88,6 @@
         margin-bottom: 30px;
     }
 
-    /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
-    .menu>li:nth-child(1) a {
-        color: black;
-        font-weight: bolder;
-    }
-
     /*Ajout de la décoration de fond.*/
     body {
         background-image: url("../img/fond décoration compétences mobile.png");
@@ -134,7 +128,7 @@
         color: black;
     }
 
-    /*Ajout de marge externe sur les éléments email et phone.*/
+    /*Ajout de marges externes sur les éléments email et phone.*/
     footer>div:last-child>ul>#email {
         margin-left: -35px;
     }
