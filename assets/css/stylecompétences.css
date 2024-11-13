@@ -105,6 +105,14 @@
         margin-top: 10%;
         margin-bottom: 10%;
     }
+    /*Définition de la taille du titre de niveau 1.*/
+    #skills>section>div h1{
+        font-size: 23px;
+    }
+    /*Définition de la taille du titre de niveau 2.*/
+    #skills h2{
+        font-size: 21px;
+    }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
     footer {

@@ -1,38 +1,45 @@
 /*Ajout du media queries pour l'adaptation sur mobile.*/
 @media screen and (max-width:375px) {
+
     /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
-    .menu>ul{
+    .menu>ul {
         display: flex;
         flex-direction: column;
     }
+
     /*Inversement de la position des liens et des images, et placemement au début de l'axe principal.*/
-    .menu>ul>li{
+    .menu>ul>li {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;   
+        justify-content: flex-end;
     }
+
     /*Alignement des éléments de la barre de navigation au centre de l'axe secondaire.*/
-    .menu>ul>li{
+    .menu>ul>li {
         display: flex;
-        align-items: center;   
+        align-items: center;
     }
-    /*Alignement de la section experiences dans l'axe vertical au centre.*/
-    #experiences{
+
+    /*Alignement de la section mes centres d'intérêt dans l'axe vertical au centre.*/
+    #centerOfInterest {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     /*Placement des éléments du footer.*/
-    footer>div:first-child{
+    footer>div:first-child {
         display: flex;
         align-items: center;
     }
-    footer>div:last-child>ul>#email{
+
+    footer>div:last-child>ul>#email {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;    
+        justify-content: flex-end;
     }
-    footer>div:last-child>ul>#phone{
+
+    footer>div:last-child>ul>#phone {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
@@ -55,14 +62,8 @@
         align-items: center;
     }
 
-    /*Placement du titre principal au centre de l'axe principal*/
-    main>#experiences>h1 {
-        display: flex;
-        justify-content: center;
-    }
-
-    /*Placement du bloc expériences au centre, aligné dans l'axe vertical.*/
-    main>#experiences {
+    /*Placement des éléments de la section centres d'intérêt alignés sur l'axe vertical, au centre.*/
+    main>#centerOfInterest {
         display: flex;
         flex-direction: column;
         align-items: center;

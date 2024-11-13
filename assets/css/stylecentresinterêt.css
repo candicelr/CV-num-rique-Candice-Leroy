@@ -19,11 +19,10 @@
         background-color: #f3cdcd;
     }
 
-    /*Mise en couleur du titre experiences de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
-    .menu>ul>li:nth-child(4) a {
+    /*Mise en couleur du titre centres d'interêt de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>ul>li:nth-child(5) a {
         color: black;
         font-weight: bolder;
-
     }
 
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
@@ -93,7 +92,7 @@
 
     /*Ajout de la décoration de fond.*/
     body {
-        background-image: url("../img/fond décoration expériences mobile.png");
+        background-image: url("../img/fond decoration centres d'intérêt mobile.png");
         background-size: 100%;
         height: 100%;
         width: 100%;
@@ -102,40 +101,31 @@
         background-position: center;
     }
 
-    /*Ajout d'une marge interne à droite et à gauche, et d'une marge externe en bas, et ajout de la police Inter sur la section experiences.*/
-    #experiences {
-        padding-left: 5%;
-        padding-right: 5%;
+    /*Ajout d'une marge externe en haut, en bas et à droite du titre de la section centres d'intérêt.*/
+    #centerOfInterest>h1 {
+        margin-top: 45%;
         margin-bottom: 10%;
-        font-family: "Inter", sans-serif;
+        margin-right: 10%;
+
     }
 
-    /*Ajout d'une marge externe en haut et en bas du titre de la section présentation, et mise en gras.*/
-    #experiences>h1 {
-        margin-top: 30%;
-        margin-bottom: 10%;
-        font-weight: bolder;
+    /*Ajout d'une marge externe à droite et en bas de la liste de la section centres d'intérêt.*/
+    #centerOfInterest>ul {
+        margin-right: 35%;
+        margin-bottom: 27%;
+
     }
 
-    /*Définition de la graisse et de la taille de la police des 4 paragraphes de la section expériences.*/
-    #experiences>div>p:nth-child(1) {
-        font-weight: bold;
+    /*Ajout de la police Inter et d'une taille de 20px au éléments de la liste de la section centres d'intérêt.*/
+    #centerOfInterest>ul li {
         font-size: 20px;
+        font-family: "Inter", sans-serif;
+
     }
 
-    #experiences>div>p:nth-child(2) {
-
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    #experiences>div>p:nth-child(3) {
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-    #experiences>div>p:nth-child(4) {
-        font-size: 16px;
+    /*Ajout d'une marge externe en bas de chaque éléments de la liste de la section centres d'intérêt.*/
+    #centerOfInterest>ul li {
+        margin-bottom: 10%;
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
@@ -197,9 +187,8 @@
         display: none;
     }
 
-
     /*Mise en couleur du titre mes diplômes de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
-    header>nav>ul>li:nth-child(4) a {
+    header>nav>ul>li:nth-child(5) a {
         color: black;
         font-weight: bolder;
     }
@@ -231,7 +220,7 @@
         margin: 10px;
     }
 
-    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     header>nav>ul>li a {
         text-decoration: none;
         color: black;
@@ -239,7 +228,7 @@
 
     /*Ajout de la décoration de fond*/
     main {
-        background-image: url("../img/fond décoration expériences.png");
+        background-image: url("../img/fond décoration centres d'interêt.png");
         background-size: 102%;
         height: 100%;
         width: 100%;
@@ -248,57 +237,24 @@
         background-position: center;
     }
 
-
-    /*Définition de la taille de la police de la section expériences.*/
-    main>#experiences {
-        font-size: 24px;
-        font-family: "Inter", sans-serif;
+    /*Définition de la taille de la section centres d'intérêts et et ajoout d'une marge externe en bas..*/
+    main>#centerOfInterest {
+        height: 550px;
+        margin-bottom: 2%;
     }
 
-    /*Définition de la marge externe,de la taille et de la graisse du premier titre de la section expériences.*/
-    main>#experiences>h1 {
+    /*Défintion de la taille de la police et ajout d'une marge externe en haut et à gauche du titre de la section mes centres d'interêt.*/
+    main>#centerOfInterest>h1 {
         font-size: 30px;
-        font-weight: bolder;
-        margin-top: 80px;
-        margin-bottom: 60px;
-        margin-right: 220px;
-       
+        margin-top: 90px;
+        margin-left: 220px;
     }
 
-    /*Définition de la marge externe du bloc de texte de la section expériences.*/
-    main>#experiences>div {
-        margin-bottom: 6%;
-        margin-right: 30%;
-        margin-left: 35%;
-    }
-
-    /*Définition de la marge externe du bas, de la taille et de la graisse des paragraphes de la section expériences.*/
-    main>#experiences>div>p:nth-child(1) {
-        font-weight: bold;
+    /*Défintion de la taille de la police et ajout d'une marge externe en haut et à gauche de la liste de mes centres d'interêt.*/
+    main>#centerOfInterest>ul {
         font-size: 25px;
-        margin-bottom: 40px;
-    }
-
-    main>#experiences>div>p:nth-child(2) {
-        font-weight: bold;
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
-    main>#experiences>div>p:nth-child(3) {
-        font-size: 22px;
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-
-    main>#experiences>div>p:nth-child(4) {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    main>#experiences>div>p:last-child {
-        font-size: 20px;
-        font-weight: 500;
+        margin-top: 40px;
+        margin-left: 100px;
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
