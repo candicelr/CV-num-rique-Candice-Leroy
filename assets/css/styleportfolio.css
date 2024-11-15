@@ -1,0 +1,569 @@
+/*Ajout de la police inter et Irish Grover avec google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/*Ajout du media queries pour l'adaptation sur mobile.*/
+@media screen and (max-width:375px) {
+
+    /*Ajout d'un fond transparent sur l'icone du menu.*/
+    .mobile-menu {
+        background-color: transparent;
+    }
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
+        width: 100%;
+        height: 600px;
+        padding-top: 100px;
+
+    }
+
+    /*Définition de la couleur de la barre de navigation.*/
+    .menu {
+        background-color: #f3cdcd;
+    }
+
+    /*Mise en couleur du titre portfolio de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>ul>li:nth-child(6) a {
+        color: black;
+        font-weight: bolder;
+
+    }
+
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
+    .menu>ul>li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
+    .menu>ul>li {
+        margin-top: 40px;
+    }
+
+    /*Ajout de marges externes sur les liens et les images des éléments de la barre de navigation, afin qu'ils soient correctement positionner les uns par rapport aux autres.*/
+    .menu>ul>li:nth-child(1) a {
+        margin-left: 20px;
+    }
+
+    .menu>ul>li:nth-child(2) a {
+        margin-left: 15px;
+    }
+
+    .menu>ul>li:nth-child(2) img {
+        margin-left: -3px;
+        margin-top: 5px;
+    }
+
+    .menu>ul>li:nth-child(3) img {
+        margin-left: -5px;
+    }
+
+    .menu>ul>li:nth-child(3) a {
+        margin-left: 10px;
+    }
+
+    .menu>ul>li:nth-child(4) a {
+        margin-left: 13px;
+    }
+
+    .menu>ul>li:nth-child(4) img {
+        margin-left: -3px;
+        margin-bottom: 5px;
+    }
+
+    .menu>ul>li:nth-child(5) a {
+        margin-left: 5px;
+    }
+
+    .menu>ul>li:nth-child(5) img {
+        margin-left: -5px;
+    }
+
+    .menu>ul>li:nth-child(6) a {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu>ul>li:nth-child(6) img {
+        margin-bottom: 30px;
+    }
+
+    /*Définition de la police, de la taille et de la marge externe du titre principal.*/
+    main>h1 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 50px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    /*Définition de la police, de la taille et de la marge externe en bas du premier titre secondaire (Design).*/
+    main>h2 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 35px;
+        margin-bottom: 100px;
+
+    }
+
+    /*Ajout de la police inter sur toute la section Portfolio.*/
+    main section {
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Définition de la taille des titres de niveau 3 des sections.*/
+    main>section>section h3 {
+        font-size: 25px;
+    }
+
+    /*Définition de la taille des paragraphes des sections.*/
+    main>section>section p {
+        font-size: 20px;
+    }
+
+    /*Définition des marges externes en bas, à droite et à gauche des titres de niveau 3 des sections.*/
+    main>section>section:first-child h3 {
+        margin-bottom: 40px;
+        text-align: center;
+        margin-right: 60px;
+        margin-left: 30px;
+    }
+
+    /*Définition de la marge interne à droite et des marges externes en haut et à gauche du bloc de la première section de la section design et définition de sa taille.*/
+    main>section>section:first-child div {
+        padding-right: 500px;
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    /*Définition des marges externes en bas et à gauche et de la taille de l'image de la première section de la section design et définition de sa taille.*/
+    main>section>section:first-child img {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        height: 80%;
+        width: 80%;
+    }
+
+    /*Ajout d'une marge négative en bas du deuxième paragraphe de la première section de la section design.*/
+    main>section>section:first-child div p:nth-child(2) {
+        margin-bottom: -5%;
+
+    }
+
+    /*Définition de la marge externe en bas,de la graisse, de l'alignement et de la marge externe en bas du paragraphe de la première section, de la section design.*/
+    main>section>section:nth-child(2) p {
+        margin-bottom: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    /*Définition de la taille et des marges externes en bas et à gauche des images des sections 2 et 3 de la section design.*/
+    main>section>section:nth-child(2) img {
+        height: 90%;
+        width: 90%;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+
+    /*Définition de la marge externe à gauche du paragraphe de la deuxième section de la section design.*/
+    main>section>section:nth-child(2) p {
+        margin-left: 20px;
+    }
+
+    /*Définition de la taille et des marges externes à gauche et en bas de l'image de la troisième section de la section design.*/
+    main>section>section:nth-child(3) img {
+        height: 80%;
+        width: 80%;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    /*Définition des marges externes en bas et à gauche du bloc de la troisième section de la section design.*/
+    main>section>section:nth-child(3) div {
+        margin-left: 30px;
+        margin-bottom: 70px;
+
+    }
+
+    /*Définition des marges externes en bas et à droite et de l'alignement du titre de niveau 3 de la troisième section de la section design.*/
+    main>section>section:nth-child(3) h3 {
+        margin-bottom: 30px;
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    /*Définition de la taille et des marges externes en bas et à droite de l'image de la quatrième section de la section design.*/
+    main>section>section:nth-child(4) img {
+        height: 90%;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    /*Définition des marges externes en bas, à droite et à gauche,de la graisse et de l'alignement du paragraphe de la quatrième section de la section design.*/
+    main>section>section:nth-child(4) p {
+        margin-bottom: 70px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    /*Définition de la police, de la taille et des marges externes en bas et à droite du titre de niveau 2 de la section développement.*/
+    main>#Developpement>h2 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 35px;
+        margin-bottom: 70px;
+        margin-right: 25px;
+    }
+
+    /*Définition de la taille de l'image de la première section de la section développement.*/
+    main>#Developpement #sectionOne img {
+        height: 90%;
+        width: 90%;
+
+    }
+
+    /*Définition de la taille et des marges externes en haut et en bas du bloc de la première section de la section développement.*/
+    main>#Developpement #sectionOne div {
+        width: 100%;
+        margin-bottom: 70px;
+        margin-top: -90px;
+    }
+
+    /*Définition de la taille et des marges externes en bas, à droite et à gauche du titre de niveau 3 de la première section de la section présentation.*/
+    main>#Developpement #sectionOne h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    /*Défintion de la taille,de la graisse,de l'alignement et de la marge externe à droite du paragraphe de la première section de la section développement.*/
+    main>#Developpement #sectionOne p {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    /*Défintion de la marge externe en bas du bloc de la deuxième section de la section présentation.*/
+    main>#Developpement #sectionTwo div {
+        margin-bottom: 60px;
+    }
+
+    /*Définition de la marge externe en bas du titre de niveau 3 de deuxième section de la section développement.*/
+    main>#Developpement #sectionTwo h3 {
+        margin-bottom: 40px;
+    }
+
+    /*Définition des marges externes en bas et à droite du paragraphe de la deuxième section de la section développement.*/
+    main>#Developpement #sectionTwo div p {
+        margin-bottom: -10px;
+        margin-right: 10px;
+    }
+
+    /*Définition des marges externes à droite et en bas et de la taille de l'image de la deuxième section de la section développement.*/
+    main>#Developpement #sectionTwo img {
+        width: 90%;
+        height: 90%;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+
+    /*Ajout de la décoration de fond.*/
+    body {
+        background-image: url("../img/fond décoration portfolio mobile.png");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Définition de la couleur de fond et de la marge interne du footer.*/
+    footer {
+        background-color: #f3cdcd;
+        height: 150px;
+    }
+
+    /*Définition de la taille des icones des élements du footer.*/
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /*Modification de la couleur du lien de l'adresse mail.*/
+    footer #email a {
+        color: black;
+    }
+
+    /*Modification de la couleur du lien du numéro de téléphone.*/
+    footer #phone a {
+        color: black;
+    }
+
+    /*Ajout de marge externe sur les éléments email et phone.*/
+    footer>div:last-child>ul>#email {
+        margin-left: -35px;
+    }
+
+    footer>div:last-child>ul>#phone {
+        margin-left: -35px;
+    }
+
+}
+
+/*Ajout du media queries pour l'adaptation sur ordinateur.*/
+@media screen and (min-width:1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Définition de la largeur de la barre de navigation.*/
+    .menu {
+        width: 100%;
+    }
+
+    /*Définition de la taille et de la couleur de la barre de navigation.*/
+    .menu>ul {
+        background-color: #f3cdcd;
+        height: 80px;
+    }
+
+    /*Je cache l'icone menu sur la version ordinateur.*/
+    .mobile-menu {
+        display: none;
+    }
+
+    /*Mise en couleur du titre portfolio, de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
+    .menu>ul>li:nth-child(6) a {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Modification de l'état et de la couleur des titres des éléments de la barre de navigation au survol.*/
+    .menu>ul>li>a:hover {
+        color: black;
+        font-weight: bolder;
+    }
+
+    /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
+    .menu>ul>li:nth-child(1) a {
+        margin: 10px;
+    }
+
+    .menu>ul>li:nth-child(2) a {
+        margin: 10PX;
+    }
+
+    .menu>ul>li:nth-child(3) a {
+        margin: 10px;
+    }
+
+    .menu>ul>li:nth-child(4) a {
+        margin: 10px;
+    }
+
+    .menu>ul>li:nth-child(6) a {
+        margin: 10px;
+    }
+
+
+    /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
+    .menu>ul>li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Ajout de la décoration de fond.*/
+    body {
+        background-image: url("../img/fond décoration portfolio.png");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*Définition de la police, de la taille et de la marge externe du titre principal.*/
+    main>h1 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 60px;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    /*Définition de la police, de la taille et de la marge externe en bas du premier titre secondaire (Design).*/
+    main>h2 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 40px;
+        margin-bottom: 100px;
+
+    }
+
+    /*Ajout de la police inter sur toute la section Portfolio.*/
+    main section {
+        font-family: "Inter", sans-serif;
+    }
+
+    /*Définition de la taille des titres de niveau 3 des sections.*/
+    main>section>section h3 {
+        font-size: 30px;
+    }
+
+    /*Définition de la taille des paragraphes des sections.*/
+    main>section>section p {
+        font-size: 25px;
+    }
+
+    /*Définition de la marge externe en bas et en haut des titres de niveau 3 des sections.*/
+    main>section>section:first-child h3 {
+        margin-bottom: 20px;
+        margin-top: -30px;
+    }
+
+    /*Définition de la marge interne à droite et des marges externes en haut et à gauche du bloc de la première section de la section design.*/
+    main>section>section:first-child div {
+        padding-right: 500px;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+
+    /*Définition des marges externes en bas et à gauche de l'image de la première section de la section design.*/
+    main>section>section:first-child img {
+        margin-left: 70px;
+        margin-bottom: 80px;
+        height: 30%;
+        width: 30%;
+    }
+
+
+    /*Définition de la marge externe en bas et de la graisse du paragraphe de la première section, de la section design.*/
+    main>section>section:nth-child(2) p {
+        margin-bottom: 60px;
+        font-weight: bold;
+    }
+
+    /*Définition de la taille et des marges externes en bas et à gauche des images des sections 2 et 3 de la section design.*/
+    main>section>section:nth-child(2) img {
+        height: 70%;
+        width: 70%;
+        margin-left: 230px;
+        margin-bottom: 100px;
+    }
+
+    main>section>section:nth-child(3) img {
+        height: 20%;
+        width: 20%;
+        margin-left: 70px;
+        margin-bottom: 80px;
+    }
+
+    /*Définition des marges externes en haut et à gauche du bloc de la troisième section de la section design.*/
+    main>section>section:nth-child(3) div {
+        margin-top: 60px;
+        margin-left: 90px;
+
+    }
+
+    /*Définition de la marge externe en haut du titre de niveau 3 de la troisième section de la section design.*/
+    main>section>section:nth-child(3) h3 {
+        margin-bottom: 20px;
+    }
+
+    /*Définition de la taille et de la marge externe en bas de l'image de la quatrième section de la section design.*/
+    main>section>section:nth-child(4) img {
+        height: 40%;
+        width: 40%;
+        margin-bottom: 50px;
+    }
+
+    /*Définition de la marge externe en bas et de la graisse du paragraphe de la quatrième section de la section design.*/
+    main>section>section:nth-child(4) p {
+        margin-bottom: 150px;
+        font-weight: bold;
+    }
+
+    /*Définition de la police, de la taille et de la marge externe en bas du titre de niveau 2 de la section développement.*/
+    main>#Developpement>h2 {
+        font-family: "Irish Grover", system-ui;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+
+    /*Définition de la taille et de la marge externe à gauche de l'image de la première section de la section développement.*/
+    main>#Developpement #sectionOne img {
+        height: 30%;
+        width: 30%;
+        margin-left: 150px;
+    }
+
+    /*Définition des marges externes en haut, à droite et à gauche du bloc de la première section de la section développement.*/
+    main>#Developpement #sectionOne div {
+        margin-top: 50px;
+        padding-right: 200px;
+        margin-left: 50px;
+
+    }
+
+    /*Définition de la taille et de la marge externe en bas du titre de niveau 3 de la première section de la section présentation.*/
+    main>#Developpement #sectionOne h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+
+    }
+
+    /*Défintion de la taille et de la graisse du paragraphe de la première section de la section développement.*/
+    main>#Developpement #sectionOne p {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    /*Défintion de la marge externe en bas du bloc de la deuxième section de la section présentation.*/
+    main>#Developpement #sectionTwo div {
+        margin-bottom: 100px;
+    }
+
+    /*Définition de la marge externe en bas du titre de niveau 3 de deuxième section de la section développement.*/
+    main>#Developpement #sectionTwo h3 {
+        margin-bottom: 25px;
+    }
+
+    /*Définition de la marge externe à droite de l'image de la deuxième section de la section développement.*/
+    main>#Developpement #sectionTwo img {
+        margin-right: 70px;
+    }
+
+
+    /* Définition de la couleur de fond et de la marge interne du footer.*/
+    footer {
+        background-color: #f3cdcd;
+        padding: 20px;
+    }
+
+    /*Définition de la taille des icones des élements du footer.*/
+    footer img {
+        width: 31px;
+        height: 31px;
+    }
+
+    /*Modification de la couleur du lien de l'adresse mail.*/
+    footer #email a {
+        color: black;
+    }
+
+    /*Modification de la couleur du lien du numéro de téléphone.*/
+    footer #phone a {
+        color: black;
+    }
+
+}

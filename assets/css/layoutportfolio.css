@@ -1,0 +1,179 @@
+/*Ajout du media queries pour l'adaptation sur mobile.*/
+@media screen and (max-width:375px) {
+
+    /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
+    .menu>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Inversement de la position des liens et des images, et placemement au début de l'axe principal.*/
+    .menu>ul>li {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    /*Alignement des éléments de la barre de navigation au centre de l'axe secondaire.*/
+    .menu>ul>li {
+        display: flex;
+        align-items: center;
+    }
+      /*Placement du titre principal au centre de l'axe horizontal.*/
+      main>h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement du titre de niveau 2 (Design) au centre de l'axe horizontal.*/
+    main>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement du paragraphe et de l'image de la quatrième section de la section design en colomne alignés au centre de l'axe horizontal.*/
+    main>section>section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Placement du titre de niveau 2 de la section développement au centre de l'axe horizontal.*/
+    main>#Developpement>h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Placement du paragraphe et des images de la deuxième section de la section développement à coté, alignés au centre de l'axe vertical.*/
+    main>#Developpement #sectionTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Placement des éléments du footer.*/
+    footer>div:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    footer>div:last-child>ul>#email {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    footer>div:last-child>ul>#phone {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}
+
+/*Ajout du media queries pour l'adaptation sur ordinateur*/
+@media screen and (min-width:1024px) {
+
+    /*Placement de la barre de navigation.*/
+    header>nav>ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    header>nav>ul>li {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    /*Placement du titre principal au centre de l'axe horizontal.*/
+    main>h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement du titre de niveau 2 (Design) au centre de l'axe horizontal.*/
+    main>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement de l'image et du bloc de la première section de la section design à coté.*/
+    main>section>section:first-child {
+        display: flex;
+    }
+
+    /*Placement du paragraphe de la deuxième section de la section design au centre de l'axe horizontal.*/
+    main>section>section:nth-child(2) p {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement du paragraphe et de l'image de la deuxième section de la section design en colomne.*/
+    main>section>section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Placement du bloc et de l'image de la troisième section de la section design à coté.*/
+    main>section>section:nth-child(3) {
+        display: flex;
+    }
+
+    /*Placement du paragraphe et de l'image de la quatrième section de la section design en colomne alignés au centre de l'axe horizontal.*/
+    main>section>section:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Placement du titre de niveau 2 de la section développement au centre de l'axe horizontal.*/
+    main>#Developpement>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Placement du paragraphe et de l'image de la première section de la section développement à coté.*/
+    #Developpement #sectionOne {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Placement du paragraphe et des images de la deuxième section de la section développement à coté, alignés au centre de l'axe vertical.*/
+    main>#Developpement #sectionTwo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*Placement du footer et de ses élements.*/
+    footer {
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+    }
+
+    footer>div:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    footer #email {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    footer #phone {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    footer>div:last-child>ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
