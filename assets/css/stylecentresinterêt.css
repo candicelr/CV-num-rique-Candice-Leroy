@@ -1,5 +1,11 @@
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
+@media screen and (max-width: 500px) {
+
+    /*Marge externe sur l'icone menu.*/
+    .material-symbols-outlined {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
     /*Ajout d'un fond transparent sur l'icone du menu.*/
     .mobile-menu {
@@ -9,26 +15,32 @@
     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
     nav.menu {
         width: 100%;
-        height: 600px;
+        height: 620px;
         padding-top: 100px;
-
     }
 
-    /*Définition de la couleur de la barre de navigation.*/
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Définition de la couleur de la barre de navigation et par défaut on cache la barre de navigation.*/
     .menu {
         background-color: #f3cdcd;
+        display: none;
     }
 
     /*Mise en couleur du titre centres d'interêt de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>ul>li:nth-child(5) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
     .menu>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
@@ -86,52 +98,82 @@
 
     /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>li:nth-child(1) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
-    }
-
-    /*Ajout de la décoration de fond.*/
-    body {
-        background-image: url("../img/fond decoration centres d'intérêt mobile.png");
-        background-size: 100%;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     /*Ajout d'une marge externe en haut, en bas et à droite du titre de la section centres d'intérêt.*/
     #centerOfInterest>h1 {
-        margin-top: 45%;
+        text-align: center;
         margin-bottom: 10%;
-        margin-right: 10%;
 
     }
 
-    /*Ajout d'une marge externe à droite et en bas de la liste de la section centres d'intérêt.*/
-    #centerOfInterest>ul {
-        margin-right: 35%;
-        margin-bottom: 27%;
-
+    /*Définition de la grille sur la div de la section centres d'intérêts.*/
+    main>#centerOfInterest>div {
+        display: grid;
+        margin-bottom: 30px;
+        row-gap: 10px;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "voyages"
+            "photoVideo"
+            "design"
+            "mode"
+            "musique";
     }
 
-    /*Ajout de la police Inter et d'une taille de 20px au éléments de la liste de la section centres d'intérêt.*/
-    #centerOfInterest>ul li {
-        font-size: 20px;
-        font-family: "Inter", sans-serif;
-
+    /*Précision de l'emplacement de chaque élément en fonction de leur nom et de la place qui leur est attribué et qui à été defini précédememnt.*/
+    main>#centerOfInterest>div img:nth-child(1) {
+        grid-area: voyages;
+        justify-self: center;
     }
 
-    /*Ajout d'une marge externe en bas de chaque éléments de la liste de la section centres d'intérêt.*/
-    #centerOfInterest>ul li {
-        margin-bottom: 10%;
+    main>#centerOfInterest>div img:nth-child(2) {
+        grid-area: photoVideo;
+        justify-self: center;
+    }
+
+    main>#centerOfInterest>div img:nth-child(6) {
+        grid-area: design;
+        justify-self: center;
+    }
+
+    main>#centerOfInterest>div img:nth-child(4) {
+        grid-area: mode;
+        justify-self: center;
+    }
+
+    main>#centerOfInterest>div img:nth-child(7) {
+        grid-area: musique;
+        justify-self: center;
+    }
+
+    /*On cache les images qui servent à la version desktop.*/
+    main>#centerOfInterest>div img:nth-child(3) {
+        display: none;
+    }
+
+    main>#centerOfInterest>div img:nth-child(5) {
+        display: none;
+    }
+
+    /*Ajout de la décoration de fond.*/
+    body {
+        background-image: url("../img/fond décoration accueil mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
     footer {
         background-color: #f3cdcd;
         height: 150px;
+        padding-left: 10px;
     }
 
     /*Définition de la taille des icones des élements du footer.*/
@@ -142,12 +184,12 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de marge externe sur les éléments email et phone.*/
@@ -161,11 +203,28 @@
 
 }
 
+/*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
+@media screen and (min-width:392px) and (max-width:500px) {
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
+        width: 100%;
+        height: 800px;
+        padding-top: 100px;
+    }
+
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
 /*Ajout de la police inter avec google font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*Ajout du media queries pour l'adaptation sur ordinateur*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -189,13 +248,13 @@
 
     /*Mise en couleur du titre mes diplômes de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     header>nav>ul>li:nth-child(5) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
     /*Modification de la couleur des titres des éléments de la barre de navigation au survol*/
     header>nav>ul>li>a:hover {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
@@ -223,38 +282,69 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     header>nav>ul>li a {
         text-decoration: none;
-        color: black;
-    }
-
-    /*Ajout de la décoration de fond*/
-    main {
-        background-image: url("../img/fond décoration centres d'interêt.png");
-        background-size: 102%;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*Définition de la taille de la section centres d'intérêts et et ajoout d'une marge externe en bas..*/
-    main>#centerOfInterest {
-        height: 550px;
-        margin-bottom: 2%;
+        color: #000000;
     }
 
     /*Défintion de la taille de la police et ajout d'une marge externe en haut et à gauche du titre de la section mes centres d'interêt.*/
     main>#centerOfInterest>h1 {
         font-size: 30px;
-        margin-top: 90px;
-        margin-left: 220px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-family: "Inter", sans-serif;
     }
 
-    /*Défintion de la taille de la police et ajout d'une marge externe en haut et à gauche de la liste de mes centres d'interêt.*/
-    main>#centerOfInterest>ul {
-        font-size: 25px;
-        margin-top: 40px;
+    /*Définition de la grille sur la div de la la section centres d'intérêts.*/
+    main>#centerOfInterest>div {
+        display: grid;
+        gap: 10px;
         margin-left: 100px;
+        margin-bottom: 50px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "voyages photoVideo design"
+            "mode musique musique";
+    }
+
+    /*Précision de l'emplacement de chaque élément en fonction de leur nom et de la place qui leur est attribué et qui à été defini précédememnt.*/
+
+    main>#centerOfInterest>div img:nth-child(1) {
+        grid-area: voyages;
+    }
+
+    main>#centerOfInterest>div img:nth-child(2) {
+        grid-area: photoVideo;
+    }
+
+    main>#centerOfInterest>div img:nth-child(3) {
+        grid-area: design;
+    }
+
+    main>#centerOfInterest>div img:nth-child(4) {
+        grid-area: mode;
+    }
+
+    main>#centerOfInterest>div img:nth-child(5) {
+        grid-area: musique;
+    }
+
+    /*Ajout de la décoration de fond.*/
+    main {
+        background-image: url("../img/fond décoration accueil.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*On cache les deux images qui servent à la version mobile.*/
+    main>#centerOfInterest>div img:nth-child(6) {
+        display: none;
+    }
+
+    main>#centerOfInterest>div img:nth-child(7) {
+        display: none;
+
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
@@ -271,12 +361,21 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 }
 
+/*Ajout d'une nouvelle image de fond moins large à partir d'une taille d'écran inférieur à 1300px.*/
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    main {
+        background-image: url("../img/fond decoration centres d'intérêt moyen.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

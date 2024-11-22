@@ -1,5 +1,11 @@
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
+@media screen and (max-width: 500px) {
+
+    /*Marge externe sur l'icone menu.*/
+    .material-symbols-outlined {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
     /*Ajout d'un fond transparent sur l'icone du menu.*/
     .mobile-menu {
@@ -9,19 +15,25 @@
     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
     nav.menu {
         width: 100%;
-        height: 600px;
+        height: 620px;
         padding-top: 100px;
-
     }
 
-    /*Définition de la couleur de la barre de navigation.*/
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Définition de la couleur de la barre de navigation et par défaut on cache la barre de navigation.*/
     .menu {
         background-color: #f3cdcd;
+        display: none;
     }
 
     /*Mise en couleur du titre experiences de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>ul>li:nth-child(4) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
 
     }
@@ -29,7 +41,7 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
     .menu>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
@@ -87,33 +99,31 @@
 
     /*Mise en couleur du titre accueil de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>li:nth-child(1) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
     /*Ajout de la décoration de fond.*/
     body {
-        background-image: url("../img/fond décoration expériences mobile.png");
-        background-size: 100%;
-        height: 100%;
-        width: 100%;
+        background-image: url("../img/fond décoration expériences mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin: 0;
     }
 
     /*Ajout d'une marge interne à droite et à gauche, et d'une marge externe en bas, et ajout de la police Inter sur la section experiences.*/
     #experiences {
         padding-left: 5%;
         padding-right: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 25%;
         font-family: "Inter", sans-serif;
     }
 
     /*Ajout d'une marge externe en haut et en bas du titre de la section présentation, et mise en gras.*/
     #experiences>h1 {
-        margin-top: 30%;
-        margin-bottom: 10%;
+        margin-top: 160px;
+        margin-bottom: 15%;
         font-weight: bolder;
     }
 
@@ -124,7 +134,6 @@
     }
 
     #experiences>div>p:nth-child(2) {
-
         font-weight: bold;
         font-size: 18px;
     }
@@ -132,6 +141,7 @@
     #experiences>div>p:nth-child(3) {
         font-weight: 600;
         font-size: 18px;
+        margin-bottom: 20%;
     }
 
     #experiences>div>p:nth-child(4) {
@@ -142,6 +152,8 @@
     footer {
         background-color: #f3cdcd;
         height: 150px;
+        width: 100%;
+        padding-left: 10px;
     }
 
     /*Définition de la taille des icones des élements du footer.*/
@@ -152,12 +164,12 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de marge externe sur les éléments email et phone.*/
@@ -171,11 +183,28 @@
 
 }
 
+/*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
+@media screen and (min-width:392px) and (max-width:500px) {
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
+        width: 100%;
+        height: 800px;
+        padding-top: 100px;
+    }
+
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
 /*Ajout de la police inter avec google font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*Ajout du media queries pour l'adaptation sur ordinateur*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -200,13 +229,13 @@
 
     /*Mise en couleur du titre mes diplômes de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     header>nav>ul>li:nth-child(4) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
     /*Modification de la couleur des titres des éléments de la barre de navigation au survol*/
     header>nav>ul>li>a:hover {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
@@ -234,15 +263,12 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
     header>nav>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de la décoration de fond*/
     main {
-        background-image: url("../img/fond décoration expériences.png");
-        background-size: 102%;
-        height: 100%;
-        width: 100%;
+        background-image: url("../img/fond décoration expérience.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -260,9 +286,9 @@
         font-size: 30px;
         font-weight: bolder;
         margin-top: 80px;
-        margin-bottom: 60px;
-        margin-right: 220px;
-       
+        margin-bottom: 80px;
+        text-align: center;
+
     }
 
     /*Définition de la marge externe du bloc de texte de la section expériences.*/
@@ -315,12 +341,21 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 }
 
+/*Ajout d'une nouvelle image de fond moins large à partir d'une taille d'écran inférieur à 1400px.*/
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    main {
+        background-image: url("../img/fond décoration expérience moyen.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

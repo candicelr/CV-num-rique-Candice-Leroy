@@ -7,14 +7,14 @@ function toggler() {
     if (icon.innerHTML == "menu") {
         icon.innerHTML = "close";
         menu.style.display = "block";
-        presentation.style.display = "none";
+        experiences.style.display = "none";
         informations.style.display = "none";
     }
     //Quand le menu est fermé, on affiche l'icone menu pour pouvoir afficher le menu puis on cache les éléments du menu, et on affiche les éléments de la page.//
     else {
         icon.innerHTML = "menu";
         menu.style.display = "none";
-        presentation.style.display = "block";
+        experiences.style.display = "block";
         informations.style.display = "block";
     }
 }

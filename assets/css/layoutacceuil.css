@@ -1,3 +1,50 @@
+/*Ajout du media queries pour l'adaptation sur mobile.*/
+@media screen and (max-width:500px) {
+
+    /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
+    .menu>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Inversement de la position des liens et des images, et placemement au début de l'axe principal.*/
+    .menu>ul>li {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    /*Alignement des éléments de la barre de navigation au centre de l'axe secondaire.*/
+    .menu>ul>li {
+        display: flex;
+        align-items: center;
+    }
+
+    /*Placement de la photo de profil au dessus du texte de présentation.*/
+    #presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Placement des éléments du footer.*/
+    footer>div:first-child {
+        display: flex;
+        align-items: center;
+    }
+
+    footer>div:last-child>ul>#email {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    footer>div:last-child>ul>#phone {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}
+
 /*Ajout du media queries pour l'adaptation sur ordinateur*/
 @media screen and (min-width:1024px) {
 
@@ -62,45 +109,5 @@
     footer>div:last-child>ul {
         display: flex;
         flex-direction: column;
-    }
-}
-/*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
-    /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
-    .menu>ul{
-        display: flex;
-        flex-direction: column;
-    }
-    /*Inversement de la position des liens et des images, et placemement au début de l'axe principal.*/
-    .menu>ul>li{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;   
-    }
-    /*Alignement des éléments de la barre de navigation au centre de l'axe secondaire.*/
-    .menu>ul>li{
-        display: flex;
-        align-items: center;   
-    }
-    /*Placement de la photo de profil au dessus du texte de présentation.*/
-    #presentation{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    /*Placement des éléments du footer.*/
-    footer>div:first-child{
-        display: flex;
-        align-items: center;
-    }
-    footer>div:last-child>ul>#email{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;    
-    }
-    footer>div:last-child>ul>#phone{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
     }
 }

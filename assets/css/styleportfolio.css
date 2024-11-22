@@ -3,7 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
+@media screen and (max-width: 500px) {
+
+    /*Marge externe sur l'icone menu.*/
+    .material-symbols-outlined {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
     /*Ajout d'un fond transparent sur l'icone du menu.*/
     .mobile-menu {
@@ -13,19 +19,25 @@
     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
     nav.menu {
         width: 100%;
-        height: 600px;
+        height: 620px;
         padding-top: 100px;
-
     }
 
-    /*Définition de la couleur de la barre de navigation.*/
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Définition de la couleur de la barre de navigation et par défaut on cache la barre de navigation.*/
     .menu {
         background-color: #f3cdcd;
+        display: none;
     }
 
     /*Mise en couleur du titre portfolio de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>ul>li:nth-child(6) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
 
     }
@@ -33,7 +45,7 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
     .menu>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
@@ -93,7 +105,7 @@
     main>h1 {
         font-family: "Irish Grover", system-ui;
         font-size: 50px;
-        margin-top: 100px;
+        margin-top: 60px;
         margin-bottom: 60px;
     }
 
@@ -140,7 +152,7 @@
 
     /*Définition des marges externes en bas et à gauche et de la taille de l'image de la première section de la section design et définition de sa taille.*/
     main>section>section:first-child img {
-        margin-left: 30px;
+        margin-left: 40px;
         margin-bottom: 10px;
         height: 80%;
         width: 80%;
@@ -165,7 +177,7 @@
         height: 90%;
         width: 90%;
         margin-bottom: 100px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     /*Définition de la marge externe à gauche du paragraphe de la deuxième section de la section design.*/
@@ -273,23 +285,23 @@
         height: 90%;
         margin-right: 50px;
         margin-bottom: 30px;
+        margin-left: 40px;
     }
 
     /*Ajout de la décoration de fond.*/
     body {
-        background-image: url("../img/fond décoration portfolio mobile.png");
-        background-size: 100%;
-        height: 100%;
-        width: 100%;
+        background-image: url("../img/fond décoration portfolio mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin: 0;
     }
 
     /* Définition de la couleur de fond et de la marge interne du footer.*/
     footer {
         background-color: #f3cdcd;
         height: 150px;
+        padding-left: 10px;
     }
 
     /*Définition de la taille des icones des élements du footer.*/
@@ -300,12 +312,12 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de marge externe sur les éléments email et phone.*/
@@ -319,8 +331,25 @@
 
 }
 
+/*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
+@media screen and (min-width:392px) and (max-width:500px) {
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
+        width: 100%;
+        height: 800px;
+        padding-top: 100px;
+    }
+
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
 /*Ajout du media queries pour l'adaptation sur ordinateur.*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -345,13 +374,13 @@
 
     /*Mise en couleur du titre portfolio, de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>ul>li:nth-child(6) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
     /*Modification de l'état et de la couleur des titres des éléments de la barre de navigation au survol.*/
     .menu>ul>li>a:hover {
-        color: black;
+        color: #000000;
         font-weight: bolder;
     }
 
@@ -380,15 +409,12 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     .menu>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de la décoration de fond.*/
     body {
         background-image: url("../img/fond décoration portfolio.png");
-        background-size: 100%;
-        height: 100%;
-        width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -433,7 +459,7 @@
 
     /*Définition de la marge interne à droite et des marges externes en haut et à gauche du bloc de la première section de la section design.*/
     main>section>section:first-child div {
-        padding-right: 500px;
+        margin-right: 200px;
         margin-top: 60px;
         margin-left: 80px;
     }
@@ -558,12 +584,12 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 
 }

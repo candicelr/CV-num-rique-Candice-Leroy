@@ -1,5 +1,5 @@
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:500px) {
     /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
     .menu>ul{
         display: flex;
@@ -22,6 +22,7 @@
         flex-direction: column;
         align-items: center;
     }
+    
     /*Placement des éléments du footer.*/
     footer>div:first-child{
         display: flex;

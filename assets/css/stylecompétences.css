@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:375px) {
+@media screen and (max-width: 500px) {
+
+    /*Marge externe sur l'icone menu.*/
+    .material-symbols-outlined {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
     /*Ajout d'un fond transparent sur l'icone du menu.*/
     .mobile-menu {
@@ -12,19 +18,24 @@
     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
     nav.menu {
         width: 100%;
-        height: 600px;
+        height: 620px;
         padding-top: 100px;
-
+    }
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 
-    /*Définition de la couleur de la barre de navigation.*/
+    /*Définition de la couleur de la barre de navigation et par défaut on cache la barre de navigation.*/
     .menu {
         background-color: #f3cdcd;
+        display: none;
     }
 
     /*Mise en couleur du titre compétences de la barre de navigation afin que l'utilisateur sache dans quel onglet il se trouve actuellement.*/
     .menu>ul>li:nth-child(2) a {
-        color: black;
+        color: #000000;
         font-weight: bolder;
 
     }
@@ -32,7 +43,7 @@
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     .menu>ul>li a {
         text-decoration: none;
-        color: black;
+        color: #000000;
     }
 
     /*Ajout d'une marge externe en haut de chaque éléments de la barre de navigation.*/
@@ -90,27 +101,27 @@
 
     /*Ajout de la décoration de fond.*/
     body {
-        background-image: url("../img/fond décoration compétences mobile.png");
-        background-size: 100%;
-        height: 100%;
-        width: 100%;
+        background-image: url("../img/fond décoration compétence mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin: 0;
     }
 
     /*Ajout d'une marge externe en haut, en bas et à gauche de la section compétences.*/
     #skills {
-        margin-left: 10%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-left: 15%;
+        margin-top: 40%;
+        margin-bottom: 20%;
     }
+
     /*Définition de la taille du titre de niveau 1.*/
-    #skills>section>div h1{
+    #skills>section>div h1 {
         font-size: 23px;
     }
+
     /*Définition de la taille du titre de niveau 2.*/
-    #skills h2{
+    #skills h2 {
         font-size: 21px;
     }
 
@@ -118,6 +129,7 @@
     footer {
         background-color: #f3cdcd;
         height: 150px;
+        padding-left: 10px;
     }
 
     /*Définition de la taille des icones des élements du footer.*/
@@ -128,12 +140,12 @@
 
     /*Modification de la couleur du lien de l'adresse mail.*/
     footer #email a {
-        color: black;
+        color: #000000;
     }
 
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
-        color: black;
+        color: #000000;
     }
 
     /*Ajout de marges externes sur les éléments email et phone.*/
@@ -145,6 +157,20 @@
         margin-left: -35px;
     }
 
+}
+/*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
+@media screen and (min-width:392px) and (max-width:500px){
+     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+     nav.menu {
+        width: 100%;
+        height: 800px;
+        padding-top: 100px;
+    }
+    /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
+    nav>ul>li {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 
 /*Ajout du media queries pour l'adaptation sur ordinateur*/
@@ -163,6 +189,7 @@
     header>nav>ul {
         background-color: #f3cdcd;
         height: 80px;
+
     }
 
     /*On cache l'icone menu sur la version ordinateur.*/
@@ -211,10 +238,7 @@
 
     /*Ajout de la décoration de fond*/
     main {
-        background-image: url("../img/fond décoration compétences.png");
-        background-size: 102%;
-        height: 100%;
-        width: 100%;
+        background-image: url("../img/fond décoration compétences.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -274,5 +298,15 @@
     /*Modification de la couleur du lien du numéro de téléphone.*/
     footer #phone a {
         color: black;
+    }
+}
+
+/*Ajout d'une nouvelle image de fond moins large à partir d'une taille d'écran inférieur à 1256px.*/
+@media screen and (min-width: 1024px) and (max-width: 1256px) {
+    main {
+        background-image: url("../img/fond décoration compétences moyen.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
