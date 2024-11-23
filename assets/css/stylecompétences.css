@@ -299,8 +299,8 @@
     }
 }
 
-/*Adaptation sur un ordinateur de plus de 1600px de large.*/
-@media screen and (min-width: 1600px) {
+/*Adaptation sur un ordinateur de plus de 1700px de large.*/
+@media screen and (min-width: 1700px) {
 
     /*Ajout de la décoration de fond*/
     main {
