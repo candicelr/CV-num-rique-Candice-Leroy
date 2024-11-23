@@ -303,14 +303,3 @@
     }
 
 }
-@media screen and (min-width: 1900px){
-    main {
-        background-image: url("../img/fond décoration accueil grand format.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    main{
-        height: 80%;
-    }
-}

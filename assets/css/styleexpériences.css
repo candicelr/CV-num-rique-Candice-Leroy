@@ -363,8 +363,7 @@
     main {
         background-image: url("../img/fond décoration expérience grand format.svg");
         background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
+        background-size: cover;
         background-position: center;
     }
 }
