@@ -266,26 +266,10 @@
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    header>nav>ul>li:nth-child(1) a {
+    header>nav>ul>li a {
         margin: 10px;
     }
-
-    header>nav>ul>li:nth-child(2) a {
-        margin: 10pX;
-    }
-
-    header>nav>ul>li:nth-child(3) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(4) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(6) a {
-        margin: 10px;
-    }
-
+    
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
     header>nav>ul>li a {
         text-decoration: none;
@@ -408,5 +392,103 @@
         background-size: cover;
         background-position: center;
     }
+    main>#diplomas{
+        margin-left: 60px;
+    }
 }
 
+/*Adaptation sur un ordinateur de plus de 1600px de large.*/
+@media screen and (min-width: 1600px) {
+    /*Ajout de la décoration de fond.*/
+    main {
+        background-image: url("../img/fond décoration diplômes grand format.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    /*Définition de la hauteur et de la marge externe en bas de la section diplômes.*/
+    main>#diplomas {
+        height: 900px;
+        margin-bottom: -30px;
+    }
+    /*Définition de la hauteur et de la taille des liens du menu.*/
+    .menu>ul {
+        height: 110px;
+        font-size: 24px;
+    }
+
+    /*Définition de la taille de la police et définition de la marge externe du titre principal.*/
+    main>#diplomas h1 {
+        font-size: 40px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        margin-right: 100px;
+    }
+
+    /* Définition de la taille de la police de la section diplômes.*/
+    main>#diplomas>div {
+        font-size: 35px;
+        margin-left: 100px;
+    }
+
+    /*Définition de la marge externe en bas du premier paragraphe du bloc collège de la section diplômes.*/
+    main>#diplomas>#college p:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    /*Définition des marges externes du bloc diplômes lycée.*/
+    main>#diplomas>#highSchool {
+        margin-top: 100px;
+        margin-bottom: 170px;
+        margin-right: 50px;
+    }
+
+    /*Deuxième paragraphe du bloc collège: taille de 25px et définition de la marge externe en bas.*/
+    main>#diplomas>#college>p:nth-child(2) {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    /*Troisième paragraphe du bloc collège:taille de 20px.*/
+    main>#diplomas>#college>p:nth-child(3) {
+        font-size: 30px;
+    }
+
+    /*Définition de la marge externe en bas du premier paragraphe du bloc lycée de la section diplômes.*/
+    main>#diplomas>#highSchool p:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    /*Deuxième paragraphe du bloc lycée: taille de 28x et marge externe en bas.*/
+    main>#diplomas>#highSchool>p:nth-child(2) {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    /*Du troisième paragraphe au cinquième paragraphe du bloc lycée:taille de 30px.*/
+    main>#diplomas>#highSchool>p:nth-child(3) {
+        font-size: 30px;
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(4) {
+        font-size: 30px;
+    }
+
+    main>#diplomas>#highSchool>p:nth-child(5) {
+        font-size: 30px;
+    }
+
+    /*Définition de la hauteur du footer.*/
+    footer {
+        height: 130px;
+    }
+    /*Définition de la marge interne du deuxième bloc du footer.*/
+    footer>div:last-child {
+        padding-top: 30px;
+    }
+    /*Définition de la taille du bloc du footer.*/
+    footer>div {
+        font-size: 24px;
+    }
+
+}

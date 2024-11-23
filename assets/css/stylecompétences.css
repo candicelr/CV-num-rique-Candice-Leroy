@@ -21,6 +21,7 @@
         height: 620px;
         padding-top: 100px;
     }
+
     /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
     nav>ul>li {
         font-size: 20px;
@@ -158,14 +159,17 @@
     }
 
 }
+
 /*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
-@media screen and (min-width: 392px) and (max-width: 500px){
-     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
-     nav.menu {
+@media screen and (min-width: 392px) and (max-width: 500px) {
+
+    /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
+    nav.menu {
         width: 100%;
         height: 800px;
         padding-top: 100px;
     }
+
     /*Définition de la taille et de la marge externe en bas des liens vers les autres pages.*/
     nav>ul>li {
         font-size: 24px;
@@ -210,23 +214,7 @@
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    header>nav>ul>li:nth-child(1) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(2) a {
-        margin: 10PX;
-    }
-
-    header>nav>ul>li:nth-child(3) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(4) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(6) a {
+    header>nav>ul>li a {
         margin: 10px;
     }
 
@@ -308,5 +296,80 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+}
+
+/*Adaptation sur un ordinateur de plus de 1600px de large.*/
+@media screen and (min-width: 1600px) {
+
+    /*Ajout de la décoration de fond*/
+    main {
+        background-image: url("../img/fond décoration compétences grand format.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*Définition de la hauteur et de la taille des liens du menu.*/
+    .menu>ul {
+        height: 110px;
+        font-size: 24px;
+    }
+
+    /* Définition de la hauteur de la section compétences.*/
+    main>#skills {
+        height: 900px;
+    }
+
+    /*Définition de la taille de la liste des compétences.*/
+    main>#skills ul {
+        font-size: 30px;
+    }
+
+    /*Définition de la taille du Titre principal.*/
+    main>#skills h1 {
+        font-size: 35px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    /*Ajout d'une marge externe en haut et en bas du titre secondaire.*/
+    main>#skills h2 {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    /*Défintion de la taille et de la marge externe en bas des titres de niveau 3 de la section compétences.*/
+    main>#skills h3 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    /*Ajout d'une marge externe en haut et à gauche du premier bloc de la section en cours d'apprentissage(développement).*/
+    main>#skills>section:last-child>div:first-child {
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+    /*Ajout d'une marge externe en haut et à droite du deuxième bloc de la section en cours d'apprentissage(design).*/
+    main>#skills>section:last-child>div:last-child {
+        margin-top: 80px;
+        margin-right: 200px;
+    }
+
+    /*Définition de la hauteur du footer.*/
+    footer {
+        height: 130px;
+    }
+
+    /*Définition de la marge interne du deuxième bloc du footer.*/
+    footer>div:last-child {
+        padding-top: 30px;
+    }
+
+    /*Définition de la taille du bloc du footer.*/
+    footer>div {
+        font-size: 24px;
     }
 }

@@ -259,23 +259,7 @@
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    header>nav>ul>li:nth-child(1) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(2) a {
-        margin: 10PX;
-    }
-
-    header>nav>ul>li:nth-child(3) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(4) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(6) a {
+    header>nav>ul>li a {
         margin: 10px;
     }
 
@@ -379,4 +363,43 @@
         background-position: center;
     }
 }
-
+/*Adaptation pour les ordinateurs de plus de 1600px de large.*/
+@media screen and (min-width: 1600px) {
+    /*Ajout de la décoration de fond.*/
+    main {
+        background-image: url("../img/fond décoration centres d'intérêt grand format.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    /*Définition de la taille de la section centres d'intérêt.*/
+    main>#centerOfInterest {
+        height: 900px;
+    }
+    /*Définition de la taill et de la hauteur de la liste des liens du menu.*/
+    .menu>ul {
+        height: 110px;
+        font-size: 24px;
+    }
+    /*Définition de la marge externe en haut et de la taille du premier titre de la section centres d'intérêt.*/
+    main>#centerOfInterest>h1{
+        margin-top: 150px;
+        font-size: 40px;
+    }
+    /*Définition de la marge externe en haut du bloc de la section centres d'intérêt.*/
+    main>#centerOfInterest>div{
+        margin-top: 70px;
+    }
+    /*Définition de la hauteur du footer.*/
+    footer {
+        height: 130px;
+    }
+    /*Définition de la marge interne du deuxième bloc du footer.*/
+    footer>div:last-child {
+        padding-top: 30px;
+    }
+    /*Définition de la taille du bloc du footer.*/
+    footer>div {
+        font-size: 24px;
+    }
+}

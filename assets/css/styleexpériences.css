@@ -240,23 +240,7 @@
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    header>nav>ul>li:nth-child(1) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(2) a {
-        margin: 10PX;
-    }
-
-    header>nav>ul>li:nth-child(3) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(4) a {
-        margin: 10px;
-    }
-
-    header>nav>ul>li:nth-child(6) a {
+    header>nav>ul>li a {
         margin: 10px;
     }
 
@@ -359,12 +343,71 @@
         background-position: center;
     }
 }
-@media screen and (min-width: 1900px){
+/*Adaptation sur un ordinateur de plus de 1600px de large.*/
+@media screen and (min-width: 1600px){
+    /*Ajout de la décoration de fond*/
     main {
         background-image: url("../img/fond décoration expérience grand format.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    /*Définition de la hauteur de la section expériences.*/
+    main>#experiences{
+        height: 900px;
+    }
+    /*Définition de la hauteur et de la taille des liens du menu.*/
+    .menu>ul{
+        height: 110px;
+        font-size: 24px;
+    }
+    /*Définition de la taille du premier titre de la section expériences.*/
+    main>#experiences>h1{
+        font-size: 50px;
+
+    }
+    /*Définition de l'emplacement de la section présentation.*/
+    main>#experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Définition de la taille et de la marge externe en bas des paragraphes du bloc de la section expériences.*/
+    main>#experiences>div>p:nth-child(1) {
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+
+    main>#experiences>div>p:nth-child(2) {
+        font-size: 31px;
+        margin-bottom: 25px;
+    }
+
+    main>#experiences>div>p:nth-child(3) {
+        font-size: 31px;
+        margin-bottom: 25px;
+    }
+
+    main>#experiences>div>p:nth-child(4) {
+        font-size: 31px;
+        font-weight: 500px;
+    }
+
+    main>#experiences>div>p:last-child {
+        font-size: 31px;
+        font-weight: 500px;
+    }
+    /*Définition de la hauteur du footer.*/
+    footer {
+        height: 130px;
+    }
+    /*Définition de la marge interne du deuxième bloc du footer.*/
+    footer>div:last-child {
+        padding-top: 30px;
+    }
+    /*Définition de la taille du bloc du footer.*/
+    footer>div {
+        font-size: 24px;
     }
 }
 

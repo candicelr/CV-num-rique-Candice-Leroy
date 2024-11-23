@@ -385,26 +385,9 @@
     }
 
     /*Espacement entre les titres des éléments de la barre de navigation et les pictos correspondants.*/
-    .menu>ul>li:nth-child(1) a {
+    .menu>ul>li a {
         margin: 10px;
     }
-
-    .menu>ul>li:nth-child(2) a {
-        margin: 10PX;
-    }
-
-    .menu>ul>li:nth-child(3) a {
-        margin: 10px;
-    }
-
-    .menu>ul>li:nth-child(4) a {
-        margin: 10px;
-    }
-
-    .menu>ul>li:nth-child(6) a {
-        margin: 10px;
-    }
-
 
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages.*/
     .menu>ul>li a {
@@ -592,4 +575,29 @@
         color: #000000;
     }
 
+}
+
+/*Adaptation sur un ordinateur de plus de 1600px de large.*/
+@media screen and (min-width: 1600px) {
+
+    /*Définition de la hauteur et de la taille des liens du menu.*/
+    .menu>ul {
+        height: 110px;
+        font-size: 24px;
+    }
+
+    /*Définition de la hauteur du footer.*/
+    footer {
+        height: 130px;
+    }
+
+    /*Définition de la marge interne du deuxième bloc du footer.*/
+    footer>div:last-child {
+        padding-top: 30px;
+    }
+
+    /*Définition de la taille du bloc du footer.*/
+    footer>div {
+        font-size: 24px;
+    }
 }
