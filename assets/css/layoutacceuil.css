@@ -1,5 +1,5 @@
 /*Ajout du media queries pour l'adaptation sur mobile.*/
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
 
     /*Disposition des éléments de la barre de navigation les uns en dessous des autres.*/
     .menu>ul {
@@ -45,8 +45,8 @@
     }
 }
 
-/*Ajout du media queries pour l'adaptation sur ordinateur*/
-@media screen and (min-width:1024px) {
+/*Ajout du media queries pour l'adaptation sur ordinateur.*/
+@media screen and (min-width: 1024px) {
 
     /*Placement de la barre de navigation.*/
     header>nav>ul {

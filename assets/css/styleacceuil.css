@@ -168,7 +168,7 @@
 }
 
 /*Définition de la taille du menu et de la taille des liens vers les autres pages sur les téléphones ayant une largeur d'écran compris entre 392px et 500px.*/
-@media screen and (min-width:392px) and (max-width:500px) {
+@media screen and (min-width: 392px) and (max-width: 500px) {
 
     /*Définition de la taille de la barre de navigation et de sa marge interne en haut.*/
     nav.menu {
@@ -302,4 +302,12 @@
         color: #000000;
     }
 
+}
+@media screen and (min-width: 1900px){
+    main {
+        background-image: url("../img/fond décoration compétences grand format.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
 }
