@@ -39,7 +39,6 @@
     .menu>ul>li:nth-child(6) a {
         color: #000000;
         font-weight: bolder;
-
     }
 
     /*Modification de l'apparence des liens de la barre de navigation vers les autres pages*/
@@ -114,7 +113,6 @@
         font-family: "Irish Grover", system-ui;
         font-size: 35px;
         margin-bottom: 100px;
-
     }
 
     /*Ajout de la police inter sur toute la section Portfolio.*/
@@ -147,7 +145,6 @@
         width: 100%;
         padding: 10px;
         margin-bottom: 30px;
-
     }
 
     /*Définition des marges externes en bas et à gauche et de la taille de l'image de la première section de la section design et définition de sa taille.*/
@@ -161,7 +158,6 @@
     /*Ajout d'une marge négative en bas du deuxième paragraphe de la première section de la section design.*/
     main>section>section:first-child div p:nth-child(2) {
         margin-bottom: -5%;
-
     }
 
     /*Définition de la marge externe en bas,de la graisse, de l'alignement et de la marge externe en bas du paragraphe de la première section, de la section design.*/
@@ -197,7 +193,6 @@
     main>section>section:nth-child(3) div {
         margin-left: 30px;
         margin-bottom: 70px;
-
     }
 
     /*Définition des marges externes en bas et à droite et de l'alignement du titre de niveau 3 de la troisième section de la section design.*/
@@ -236,7 +231,6 @@
     main>#Developpement #sectionOne img {
         height: 90%;
         width: 90%;
-
     }
 
     /*Définition de la taille et des marges externes en haut et en bas du bloc de la première section de la section développement.*/
@@ -252,7 +246,6 @@
         margin-bottom: 25px;
         margin-right: 20px;
         margin-left: 20px;
-
     }
 
     /*Défintion de la taille,de la graisse,de l'alignement et de la marge externe à droite du paragraphe de la première section de la section développement.*/
@@ -416,7 +409,6 @@
         font-family: "Irish Grover", system-ui;
         font-size: 40px;
         margin-bottom: 100px;
-
     }
 
     /*Ajout de la police inter sur toute la section Portfolio.*/
@@ -481,7 +473,6 @@
     main>section>section:nth-child(3) div {
         margin-top: 60px;
         margin-left: 90px;
-
     }
 
     /*Définition de la marge externe en haut du titre de niveau 3 de la troisième section de la section design.*/
@@ -521,14 +512,12 @@
         margin-top: 50px;
         padding-right: 200px;
         margin-left: 50px;
-
     }
 
     /*Définition de la taille et de la marge externe en bas du titre de niveau 3 de la première section de la section présentation.*/
     main>#Developpement #sectionOne h3 {
         font-size: 30px;
         margin-bottom: 25px;
-
     }
 
     /*Défintion de la taille et de la graisse du paragraphe de la première section de la section développement.*/

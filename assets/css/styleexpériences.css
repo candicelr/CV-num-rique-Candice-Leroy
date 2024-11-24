@@ -272,7 +272,6 @@
         margin-top: 80px;
         margin-bottom: 80px;
         text-align: center;
-
     }
 
     /*Définition de la marge externe du bloc de texte de la section expériences.*/
@@ -364,7 +363,6 @@
     /*Définition de la taille du premier titre de la section expériences.*/
     main>#experiences>h1{
         font-size: 50px;
-
     }
     /*Définition de l'emplacement de la section présentation.*/
     main>#experiences{
